@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshit Mittal - Web Developer Portfolio. Skilled in React, JavaScript, Bootstrap, and building responsive websites.">
+    <title>Harshit Mittal - Web Developer</title>
+    <!-- Google Fonts: 'Inter' for a clean, professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fira Code for Monospace font (optional but looks great for tech) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <!-- EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======== NAVIGATION BAR ======== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a class="nav-logo" href="#">Harshit<span class="accent">.dev</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link"><span class="nav-num">01.</span>About</a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-num">02.</span>Projects</a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span>Skills</a></li>
+                <li><a href="#contact" class="btn btn-nav">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO/HEADER SECTION ======== -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Added 'stagger-1', 'stagger-2' etc. for loading animation delays -->
+                <p class="hero-subtitle stagger-1">Hi, my name is</p>
+                <h1 class="hero-title stagger-2">Harshit Mittal.</h1>
+                <h2 class="hero-title-secondary stagger-3">I build things for the web.</h2>
+                <p class="hero-description stagger-4">
+                    I'm a final-year B.Tech student and front-end developer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products as an intern at <span class="highlight">Acetechnoid</span>.
+                </p>
+                <div class="hero-cta stagger-5">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+
+        <!-- ======== ABOUT ME SECTION ======== -->
+        <!-- Added 'hidden' class to sections we want to animate on scroll -->
+        <section id="about" class="section hidden">
+            <div class="container">
+                <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Harshit, a passionate web developer currently in my final year of B.Tech at MIET College. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
+                        </p>
+                        <p>
+                            Since July 2025, I've been working as a web development intern at <a href="#" class="inline-link">Acetechnoid</a>. This experience has given me the opportunity to work on real-world projects, where I've successfully built and deployed multiple live websites for clients.
+                        </p>
+                        <p>
+                            My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients. I'm also expanding my skillset by learning backend technologies like <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong> to become a full-stack developer.
+                        </p>
+                    </div>
+                     <!-- Tech stack mini-list for About section -->
+                     <div class="about-skills">
+                        <h3>Technologies I work with:</h3>
+                        <ul class="skills-ul">
+                            <li>JavaScript (ES6+)</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>HTML & CSS</li>
+                            <li>Bootstrap</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== PROJECTS SECTION ======== -->
+        <section id="projects" class="section hidden">
+            <div class="container">
+                <h2 class="section-title"><span class="section-number">02.</span> Some Things I've Built</h2>
+                
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/YOUR_USERNAME/REPO" aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        </a>
+                                        <a href="https://theregisresort.in" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title"><a href="https://theregisresort.in" target="_blank" rel="noopener noreferrer">The Regis Resort</a></h3>
+                                <div class="project-description">
+                                    <p>A fully responsive, modern hotel website built to showcase amenities and rooms. Features a clean user interface for easy navigation and booking information.</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech-list">
+                                    <li>React</li>
+                                    <li>JavaScript</li>
+                                    <li>CSS3</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://tayalpublication.com" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title"><a href="https://tayalpublication.com" target="_blank" rel="noopener noreferrer">Tayal Publications</a></h3>
+                                <div class="project-description">
+                                    <p>A professional business website designed for a publishing house. Focused on responsiveness and presenting a large catalog of information in a user-friendly way.</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech-list">
+                                    <li>HTML5</li>
+                                    <li>Bootstrap</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://goldenpakshan.com" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title"><a href="https://goldenpakshan.com" target="_blank" rel="noopener noreferrer">Golden Pakshan</a></h3>
+                                <div class="project-description">
+                                    <p>Another successful client project delivered during my internship. A fully responsive website built to meet specific client requirements for design and functionality.</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech-list">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>React Js</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div> <!-- End project-grid -->
+
+                <div style="text-align: center; margin-top: 5rem;">
+                    <a href="https://github.com/harshitmittal12" target="_blank" class="btn btn-outline">View More Archive</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SKILLS SECTION ======== -->
+        <section id="skills" class="section hidden">
+            <div class="container">
+                <h2 class="section-title"><span class="section-number">03.</span> My Tech Stack</h2>
+                
+                <div class="skills-wrapper">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Frontend Development</span>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>React.js</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>HTML5</li>
+                            <li>CSS3 / SASS</li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-bar">
+                         <div class="skill-info">
+                            <span>Backend (Learning)</span>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-bar">
+                         <div class="skill-info">
+                            <span>Tools</span>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Chrome DevTools</li>
+                            <li>Linux/ssh</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======== CONTACT SECTION ======== -->
+        <section id="contact" class="section hidden">
+            <div class="container contact-container">
+                <p class="section-number" style="color: var(--primary-color); font-family: var(--font-mono);">04. What's Next?</p>
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-description">
+                    I'm currently looking for new opportunities, and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+
+                <!-- Contact Details Grid -->
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <!-- REPLACE THIS WITH YOUR REAL EMAIL -->
+                        <a href="harshitmittal8864@gmail.com">harshitmittal8864@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <!-- REPLACE THIS WITH YOUR REAL PHONE NUMBER -->
+                        <a href="tel:+918958574618">+91 8958574618</a>
+                    </div>
+                </div>
+
+                <a href="harshitmittal8864@gmail.com" class="btn btn-primary btn-large">Say Hello</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="https://github.com/harshitmittal12" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/harshit-mittal-470a95246" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="harshitmittal8864@gmail.com" target="_blank" aria-label="Email">
+                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <p class="copyright">Designed & Built by Harshit Mittal</p>
+        </div>
+    </footer>
+
+    <!-- EXTERNAL JS (kept at end of body to preserve original execution timing) -->
+    <script src="script.js"></script>
+</body>
+</html>
